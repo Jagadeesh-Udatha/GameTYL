@@ -251,3 +251,24 @@
       .scroll-border {
         border-bottom: 2px solid black;
       }
+
+@media only screen and (min-width: 1250px) and (max-width: 1290px) {
+        .upper-body {
+          gap: 350px;
+        }
+      }
+
+      @media only screen and (min-width: 993px) and (max-width: 1251px) {
+        .upper-body {
+          gap: 250px;
+        }
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 1050px) {
+        .upper-body {
+          gap: 100px;
+        }
+        
+        .middle-body {
+          flex-direction: column;
+        }

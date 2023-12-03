@@ -70,9 +70,9 @@
 
   let winStreak = JSON.parse(localStorage.getItem("winStreak"));
   document.body.addEventListener('keydown',(event) => {
-    if(event.key === 'h') {
+    if(event.key === 'h' || event.key === 'H') {
       playerGuess('heads');
-    } else if(event.key === 't') {
+    } else if(event.key === 't' || event.key ==='T') {
       playerGuess('tails');
     }
   })
@@ -88,7 +88,7 @@
       } else {
         score.loses +=1;
         winStreak = 0;
-        document.querySelector('.js-result').innerHTML = `Oops You Guessed Wrong`;
+        document.querySelector('.js-result').innerHTML = `Oops Your Guess is Wrong`;
       }
       localStorage.setItem('score',JSON.stringify(score));
      
